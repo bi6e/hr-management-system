@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Employees</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <div class="logo">HR Management System</div>
+        <ul class="menu">
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            <li class="menu-item"><a href="manage_employees.html" class="active">Manage Employees</a></li>
+            <li class="menu-item"><a href="Manage Leaves.html">Manage Leaves</a></li>
+            <li class="menu-item"><a href="#">Messages</a></li>
+            <li class="menu-item"><a href="#">View Attendance</a></li>
+            <li class="menu-item"><a href="#">Update Profile</a></li>
+            <li class="menu-item"><a href="#">Change Password</a></li>
+            <li class="menu-item"><a href="about.html">About</a></li>
+            <li class="menu-item"><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <h1 class="page-title">Manage Employees</h1>
+        
+        <button class="add-btn" onclick="openForm()">+ Add Employee</button>
+
+        <table class="employee-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Department</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="employeeTableBody">
+                <tr>
+                    <td>John Doe</td>
+                    <td>Software Engineer</td>
+                    <td>IT</td>
+                    <td class="status active">Active</td>
+                    <td>
+                        <button class="edit-btn" onclick="editEmployee(this)">Edit</button>
+                        <button class="delete-btn" onclick="deleteEmployee(this)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    
+    <div class="modal" id="employeeModal">
+        <div class="modal-content">
+            <h2 id="formTitle">Add Employee</h2>
+            <label>Name:</label>
+            <input type="text" id="empName" placeholder="Enter Name">
+
+            <label>Position:</label>
+            <input type="text" id="empPosition" placeholder="Enter Position">
+
+            <label>Department:</label>
+            <input type="text" id="empDepartment" placeholder="Enter Department">
+
+            <label>Status:</label>
+            <select id="empStatus">
+                <option value="Active">Active</option>
+                <option value="Inactive">Inactive</option>
+            </select>
+
+            <button onclick="saveEmployee()" id="saveBtn">Save</button>
+            <button onclick="closeForm()">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
