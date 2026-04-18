@@ -48,12 +48,15 @@ http://localhost/HR-manager-system
 ## 🎓 Project Info
 University: Taibah University
 Type: Graduation Project
+
+---
+
 ## 👨‍💻 Team Members
 Name
-Ahmed Saad
-Muhammed Al-otaibi
-Abdulkarim Al-ahmadi
-Fahad Al-muhammadi
-Amjad Al-juhani
-Abdulmajed Al-hazmi
-Ali Al-zogli
+- Ahmed Saad
+- Muhammed Al-otaibi
+- Abdulkarim Al-ahmadi
+- Fahad Al-muhammadi
+- Amjad Al-juhani
+- Abdulmajed Al-hazmi
+- Ali Al-zogli
