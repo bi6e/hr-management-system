@@ -1,4 +1,4 @@
-# 🤖 HR Management Website with Integrated AI Capabilities
+# 🤖 Web-Based HR Management System
 
 ## 📌 Description
 This project is a web-based Human Resource Management System developed as a university project.  
